@@ -1,0 +1,11 @@
+.project a {
+    text-decoration: none;
+    color: black;
+}
+.project h2 {
+    font-size: 1em;
+}
+.project {
+    text-transform: lowercase;
+    font-size: 1em;
+}

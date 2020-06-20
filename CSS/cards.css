@@ -4,7 +4,7 @@ body {
 .card {
     background: black;
     margin-right: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 .card a {
     color: white;
@@ -14,30 +14,10 @@ body {
     box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
 }
 .card-content {
-    /*
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    */
     padding: 1.4em;
 }
-.card-content h2 {
-    
-}
-.card-content p {
-}
 
-/* Flexbox */
-
-/* .cards {
-    display: flex;
-    flex-wrap: wrap;
-}
-.card {
-    display: flex;
-    flex: 0 1 9em;
-}
-*/
+/* Lay out */ 
 
 .cards {
     display: flex;
@@ -45,7 +25,7 @@ body {
 }
 .card {
     display: flex;
-    width: 9em;
+    width: 150px;
     justify-content: center;
     
 }
