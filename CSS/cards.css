@@ -16,8 +16,11 @@ body {
 .card-content {
     padding: 1.4em;
 }
+.card:hover {
+    background: hsl(70, 50%, 70%);
+}
 
-/* Lay out */ 
+/* Flex */ 
 
 .cards {
     display: flex;
@@ -34,12 +37,24 @@ body {
     flex: 1 1 0;
     overflow: hidden;
 }
+
+/* 
+Use this if you change the mastlogo to svg
+
+.card-content h1 {
+    display: flex;
+    flex: 1 1 auto;
+    margin: 0; 
+
+}
+*/
+
+
+/* 
+Wabi Sabi H2/p stack that looks p cool
+   
 .card-content {
     display: flex;
     flex: 1 1 auto;
-    justify-content: center;
 }
-
-.card:hover {
-    background: hsl(70, 50%, 70%);
-}
+*/
