@@ -39,3 +39,7 @@ body {
     flex: 1 1 auto;
     justify-content: center;
 }
+
+.card:hover {
+    background: hsl(70, 50%, 70%);
+}
