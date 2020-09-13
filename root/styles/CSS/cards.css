@@ -37,3 +37,11 @@ body {
     flex: 1 1 0;
     overflow: hidden;
 }
+.card#expand {
+    height: 100px;
+}
+.card#expand:hover {
+    width: 100vw;
+    height: auto;
+    transition: width 4s ease, height 4s ease;
+}
