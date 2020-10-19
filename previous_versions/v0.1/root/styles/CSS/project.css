@@ -1,0 +1,28 @@
+.project a {
+    text-decoration: none;
+    color: black;
+}
+.project {
+    flex-wrap: wrap;
+    text-transform: lowercase;
+    font-size: 1em;
+}
+.project-contents {
+    display: flex;
+    flex-wrap: wrap;
+}
+.project-contents a {
+    display: flex;
+    flex: 0 0 9em;
+}
+.project-contents p {
+    display: flex;
+    flex: 1 0 9em;
+    margin: 0;
+}
+.card {
+    background: white;
+}
+.card a {
+    color: black;
+}

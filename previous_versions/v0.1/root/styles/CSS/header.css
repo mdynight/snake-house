@@ -1,0 +1,18 @@
+/* Root Styling */
+
+html {
+    box-sizing: border-box;
+    font-family: monospace;
+}
+a, h1, h2, p {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+
+/* Flexbox */
+
+.mast {
+    display: flex;
+    flex-wrap: wrap;
+}
