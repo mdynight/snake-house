@@ -1,0 +1,65 @@
+/* Variables */
+:root {
+/* Colours (in hsl) */
+	--value-one: hsl(0, 0%, 0%);
+	--value-two: hsl(0, 0%, 100%);
+	--value-three: hsl(0, 0%, 70%);
+	--value-four: hsl(70, 50%, 70%);
+}
+
+/* Styling */
+
+body {
+	font-family: monospace;
+	font-size: 1em;
+	font-weight: normal;
+    box-sizing: border-box;
+	background-color: var(--value-two);
+	text-transform: lowercase;
+}
+a, h1, h2, p {
+    font-size: inherit;
+    font-weight: inherit;
+	text-align: left;
+}
+.mast {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+	color: var(--value-one);
+	background-color: var(--value-two);
+	display: flex;
+    width: 150px;
+    justify-content: center;
+    margin-right: 1em;
+    margin-bottom: 1em;
+
+}
+.card:hover {
+    background-color: var(--value-four);
+}
+.card a {
+    color: var(--value-one);
+	background-color: var(--value-two);
+    text-decoration: none;
+	flex: 1 1 0;
+}
+.card a:hover {
+    box-shadow: 3px 3px 8px var(--value-three);
+	background-color: var(--value-four);
+}
+.card-content {
+    padding: 1.4em;
+}
+.project-contents {
+    display: flex;
+    flex-flow: row wrap;
+}
+.special img {
+	width: 100%;
+}
+.special {
+	flex: 1 1 150px;
+	justify-content: flex-start;
+}

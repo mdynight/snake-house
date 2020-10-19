@@ -1,12 +1,23 @@
+/* Variables */
+:root {
+/* Colours (in hsl) */
+	--value-one: hsl(0, 0%, 0%);
+	--value-two: hsl(0, 0%, 100%);
+	--value-three: hsl(0, 0%, 70%);
+	--value-four: hsl(70, 50%, 70%);
+}
+
 /* Root Styling */
 
-html {
+:root {	
     box-sizing: border-box;
     font-family: monospace;
+	font-size: 1em;
+    font-weight: normal;
 }
 a, h1, h2, p {
-    font-size: 100%;
-    font-weight: normal;
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 
@@ -21,26 +32,26 @@ body {
     box-sizing: border-box;
 }
 .card {
-    background: black;
+    background-color: var(--value-one);
     margin-right: 1em;
     margin-bottom: 1em;
+	color: var(--value-two);
 }
 .card a {
-    color: white;
+    color: var(--value-two);
     text-decoration: none;
 }
 .card a:hover {
-    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+    box-shadow: 3px 3px 8px var(--value-three);
 }
 .card-content {
     padding: 1.4em;
 }
 .card:hover {
-    background: hsl(70, 50%, 70%);
+    background-color: var(--value-four);
 }
 
 /* Flex */ 
-
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -49,26 +60,56 @@ body {
     display: flex;
     width: 150px;
     justify-content: center;
-    
 }
 .card a {
     display: flex;
     flex: 1 1 0;
     overflow: hidden;
 }
-.card#expand {
+
+/* Cards that expand */
+.expand {
     height: 100px;
 }
-.card#expand:hover {
+.expand:hover {
     width: 100vw;
     height: auto;
     transition: width 4s ease, height 4s ease;
+}
+.expand .card-content {
+	width: 100%;
+/*
+	display: flex;
+	justify-content: flex-start;
+*/
+}
+.expand p {
+	display: none;
+}
+.expand:hover p {
+	display: block;
+}
+.content-brief {
+
+}
+.expand a {
+	display: none;
+	color: var(--value-four);
+	background-color: var(--value-two);
+	height: auto;
+/*	flex: 0 1 40px;*/
+	padding: 10px;
+	width: 100px;	
+	text-align: left;
+}
+.expand:hover a {
+	display: block;
 }
 
 /* Colour Override */
 
 .links a {
-    background: hsl(0, 0%, 70%);
+    background-color: var(--value-three);
 }
 
 /* Flex */
