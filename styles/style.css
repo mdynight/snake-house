@@ -1,0 +1,79 @@
+/* Root Styling */
+
+html {
+    box-sizing: border-box;
+    font-family: monospace;
+}
+a, h1, h2, p {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+
+/* Flexbox */
+
+.mast {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    box-sizing: border-box;
+}
+.card {
+    background: black;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+.card a {
+    color: white;
+    text-decoration: none;
+}
+.card a:hover {
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+}
+.card-content {
+    padding: 1.4em;
+}
+.card:hover {
+    background: hsl(70, 50%, 70%);
+}
+
+/* Flex */ 
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    display: flex;
+    width: 150px;
+    justify-content: center;
+    
+}
+.card a {
+    display: flex;
+    flex: 1 1 0;
+    overflow: hidden;
+}
+.card#expand {
+    height: 100px;
+}
+.card#expand:hover {
+    width: 100vw;
+    height: auto;
+    transition: width 4s ease, height 4s ease;
+}
+
+/* Colour Override */
+
+.links a {
+    background: hsl(0, 0%, 70%);
+}
+
+/* Flex */
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
